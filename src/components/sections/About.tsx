@@ -41,8 +41,8 @@ export const About = () => {
                   <p className="text-muted-foreground">React, TypeScript, Next.js, Tailwind CSS</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-primary mb-2">Backend</h4>
-                  <p className="text-muted-foreground">Node.js, Python, PostgreSQL, MongoDB</p>
+                  <h4 className="font-semibold text-primary mb-2">UI/UX</h4>
+                  <p className="text-muted-foreground">Figma, Adobe Illustrator, Wireframing, Prototyping, Web and Mobile Design</p>
                 </div>
               </div>
             </div>
@@ -51,19 +51,19 @@ export const About = () => {
               <CardContent className="p-8">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">50+</div>
+                    <div className="text-3xl font-bold text-primary mb-2">5+</div>
                     <div className="text-muted-foreground">Projects Completed</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                    <div className="text-3xl font-bold text-primary mb-2">1+</div>
                     <div className="text-muted-foreground">Years Experience</div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">30+</div>
+                  {/* <div className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">+</div>
                     <div className="text-muted-foreground">Happy Clients</div>
-                  </div>
+                  </div> */}
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                    <div className="text-3xl font-bold text-primary mb-2">5+</div>
                     <div className="text-muted-foreground">Technologies</div>
                   </div>
                 </div>

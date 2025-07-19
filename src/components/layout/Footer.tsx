@@ -10,10 +10,10 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              John Developer
+              Rahul Maharjan
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Full Stack Developer passionate about creating beautiful, 
+              Frontend Developer passionate about creating beautiful, 
               performant web applications that make a difference.
             </p>
           </div>
