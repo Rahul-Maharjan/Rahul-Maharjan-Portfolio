@@ -46,7 +46,7 @@ export const Footer = () => {
             <h4 className="font-semibold">Let's Connect</h4>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Rahul-Maharjan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-background hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:scale-110"
@@ -54,7 +54,7 @@ export const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rahul-maharjan-a57256207/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-background hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:scale-110"
@@ -80,7 +80,6 @@ export const Footer = () => {
           </p>
           <div className="flex items-center space-x-1 text-muted-foreground text-sm mt-4 md:mt-0">
             <span>Made with</span>
-            <Heart className="h-4 w-4 text-red-500 animate-pulse" />
             <span>using React & Tailwind CSS</span>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState,useRef, useEffect } from "react"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { useToast } from "@/hooks/use-toast"
+import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
   const { ref, isVisible } = useScrollAnimation()
@@ -18,21 +19,47 @@ export const Contact = () => {
     message: ""
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const formRef = useRef<HTMLFormElement>(null)
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY')
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon."
-    })
-    
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    setIsSubmitting(false)
+    try {
+      if (!formRef.current) return
+      
+      const result = await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID',
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY'
+      )
+      
+      if (result.status === 200) {
+        toast({
+          title: "Message sent!",
+          description: "Thanks for reaching out. I'll get back to you soon.",
+        })
+        
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        throw new Error('Failed to send email')
+      }
+    } catch (error) {
+      console.error("Failed to send message:", error)
+      toast({
+        title: "Failed to send message",
+        description: "Please try again later or contact me through other means.",
+        variant: "destructive"
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -77,9 +104,9 @@ export const Contact = () => {
 
               <div className="space-y-6">
                 {[
-                  { icon: Mail, label: "Email", value: "john@example.com", href: "mailto:john@example.com" },
-                  { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-                  { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null }
+                  { icon: Mail, label: "Email", value: "rahulmaharjan252@gmail.com", href: "mailto:rahulmaharjan252@gmail.com" },
+                  { icon: Phone, label: "Phone", value: "+(977) 9818639012", href: "tel:+9779818639012" },
+                  { icon: MapPin, label: "Location", value: "Lalitpur, Nepal", href: null }
                 ].map((item, index) => (
                   <div 
                     key={index}
@@ -119,7 +146,7 @@ export const Contact = () => {
                   <CardTitle className="text-2xl">Send a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Name</Label>

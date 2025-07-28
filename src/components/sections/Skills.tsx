@@ -16,7 +16,7 @@ const skillCategories = [
   },
   {
     title: "UI/UX Design",
-    icon: "⚙️",
+    icon: "✒️",
     skills: [
       { name: "Figma", level: 90 },
       { name: "Wireframe", level: 85 },

@@ -4,41 +4,65 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Inc.",
-    period: "2022 - Present",
-    description: "Lead developer for multiple client projects, mentoring junior developers and implementing best practices across the development team.",
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "MongoDB"],
-    achievements: [
-      "Increased application performance by 40%",
-      "Led team of 5 developers",
-      "Implemented CI/CD pipelines"
+    "title": "Frontend Developer & UI/UX Designer",
+    "company": "Core Dreams Innovations",
+    "period": "Dec, 2024 - Jul, 2025",
+    "description": "Designed and developed responsive web interfaces, improved UI/UX for limousine dispatch systems, and contributed to client-branded solutions.",
+    "technologies": ["HTML", "CSS", "Tailwind", "React"],
+    "achievements": [
+      "Created user flows, wireframes, and prototypes for dispatch apps",
+      "Improved UI/UX of Web Booker, Passenger App, and Chauffeur App",
+      "Delivered user-friendly, client-branded solutions"
     ]
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Agency",
-    period: "2021 - 2022",
-    description: "Developed responsive web applications and collaborated with design teams to create pixel-perfect user interfaces.",
-    technologies: ["React", "Vue.js", "Sass", "Webpack", "Jest"],
-    achievements: [
-      "Built 15+ responsive websites",
-      "Improved code review process",
-      "Mentored 3 junior developers"
+    "title": "UI/UX Designer",
+    "company": "New Equilibria",
+    "period": "Oct, 2024 - Feb, 2025",
+    "description": "Optimized user journeys and designed an intuitive shopping app interface to improve engagement and conversions.",
+    "technologies": ["Figma", "Wireframing", "Prototyping"],
+    "achievements": [
+      "Enhanced navigation and user flow",
+      "Collaborated cross-functionally to align design with business goals",
+      "Improved customer experience for e-commerce"
     ]
   },
   {
-    title: "Web Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2021",
-    description: "Full-stack development for an early-stage startup, wearing multiple hats and contributing to all aspects of the product.",
-    technologies: ["JavaScript", "Python", "Django", "PostgreSQL", "Docker"],
-    achievements: [
-      "Built MVP from scratch",
-      "Implemented user authentication",
-      "Set up monitoring and analytics"
+    "title": "UI/UX Intern",
+    "company": "Treeleaf Technologies",
+    "period": "Apr, 2024 - Aug, 2024",
+    "description": "Contributed to 5+ projects, improved user workflows and interfaces, and enhanced usability through prototyping.",
+    "technologies": ["Figma", "Wireframing", "Prototyping"],
+    "achievements": [
+      "Improved user workflows by 30%",
+      "Delivered user-centric designs",
+      "Collaborated across teams to meet project goals"
     ]
-  }
+  },
+  {
+    "title": "UI/UX Designer Intern",
+    "company": "KWS Techzone",
+    "period": "Jan, 2024 - Apr, 2024",
+    "description": "Designed website interfaces and implemented responsive frontend development using Tailwind CSS.",
+    "technologies": ["HTML", "CSS", "Tailwind", "Figma"],
+    "achievements": [
+      "Enhanced platform’s user experience and visual appeal",
+      "Contributed to frontend development and styling",
+      "Improved responsiveness across devices"
+    ]
+  },
+  {
+    "title": "Admin",
+    "company": "Lalit Academy",
+    "period": "Jan, 2021 - Jan, 2023",
+    "description": "Handled administrative tasks and coordination at Lalit Academy.",
+    "technologies": [],
+    "achievements": [
+      "Provided support in daily operations",
+      "Maintained organizational efficiency",
+      "Assisted in academic administration"
+    ]
+  }  
 ]
 
 export const Experience = () => {

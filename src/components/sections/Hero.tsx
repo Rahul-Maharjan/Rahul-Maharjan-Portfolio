@@ -7,7 +7,7 @@ export const Hero = () => {
   const { ref, isVisible } = useScrollAnimation()
 
   // Typewriter animation for Developer/Designer
-  const words = ["Developer", "Designer","UI/UX Designer"];
+  const words = ["Developer", "Designer"];
   const [index, setIndex] = useState(0); // which word
   const [subIndex, setSubIndex] = useState(0); // letter
   const [deleting, setDeleting] = useState(false);
@@ -62,7 +62,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-300 animate-glow-pulse"
+              className="bg-gradient-primary hover:shadow-glow transition-all duration-400 animate-glow-pulse"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View My Work
@@ -79,7 +79,7 @@ export const Hero = () => {
 
           <div className="flex items-center justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Rahul-Maharjan" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform"
@@ -87,7 +87,7 @@ export const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://github.com/Rahul-Maharjan" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform"
@@ -95,7 +95,7 @@ export const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:john@example.com"
+              href="mailto:rahulmaharjan252@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform"
             >
               <Mail className="h-6 w-6" />
