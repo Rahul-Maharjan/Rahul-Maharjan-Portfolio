@@ -77,7 +77,7 @@ export const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border">
+          <div className="md:hidden bg-background/95 rounded-lg backdrop-blur-md border-t border-border">
             <nav className="flex flex-col py-4">
               {navItems.map((item) => (
                 <button
