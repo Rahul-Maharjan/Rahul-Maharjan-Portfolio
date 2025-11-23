@@ -36,33 +36,43 @@ const designProjects = [
 
 const devProjects = [
   {
-    title: "E-Commerce Platform",
+    title: "Royal Home Hotel",
     description:
-      "A full-featured e-commerce platform with user authentication, payment processing, and admin dashboard.",
+      "Hotel booking website with room reservations, booking management, and modern UI design.",
     image: "/api/placeholder/400/250",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    technologies: ["React", "JavaScript", "CSS3", "Vercel"],
+    github: "https://github.com/Rahul-Maharjan",
+    demo: "https://royal-home-xdigisoft-pied.vercel.app/",
     featured: true,
   },
   {
-    title: "Task Management App",
+    title: "Mini Cart E-commerce",
     description:
-      "Collaborative project management tool with real-time updates, team collaboration, and analytics.",
+      "Full-stack e-commerce website with product catalog, shopping cart, and user authentication.",
     image: "/api/placeholder/400/250",
-    technologies: ["Vue.js", "Firebase", "TypeScript", "Chart.js"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/Rahul-Maharjan",
+    demo: "https://mini-cart-5tf1.vercel.app/",
     featured: true,
   },
   {
-    title: "Weather Dashboard",
+    title: "RentX Car Rental",
     description:
-      "Beautiful weather application with location-based forecasts and interactive charts.",
+      "Car rental service website with vehicle listings, booking system, and responsive design.",
     image: "/api/placeholder/400/250",
-    technologies: ["React", "OpenWeather API", "Chart.js", "CSS3"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    technologies: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+    github: "https://github.com/Rahul-Maharjan/RentX",
+    demo: "https://rahul-maharjan.github.io/RentX/",
+    featured: false,
+  },
+  {
+    title: "Spices Food Delivery",
+    description:
+      "Hotel food delivery website with menu display, ordering system, and modern interface.",
+    image: "/api/placeholder/400/250",
+    technologies: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+    github: "https://github.com/Rahul-Maharjan/Spices",
+    demo: "https://rahul-maharjan.github.io/Spices/",
     featured: false,
   },
 ];
